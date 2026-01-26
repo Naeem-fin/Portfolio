@@ -1,0 +1,65 @@
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaUniversity,
+} from "react-icons/fa";
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-icons-only">
+        <a
+          href="mailto:mdmamunurrahman2001@gmail.com"
+          title="Email"
+          aria-label="Email"
+        >
+          <FaEnvelope />
+        </a>
+
+        <a
+          href="tel:+8801747390931"
+          title="Phone"
+          aria-label="Phone"
+        >
+          <FaPhoneAlt />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noreferrer"
+          title="LinkedIn"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+
+        <a
+          href="https://www.google.com/maps/place/Narsingdi,+Bangladesh"
+          target="_blank"
+          rel="noreferrer"
+          title="Location"
+          aria-label="Location"
+        >
+          <FaMapMarkerAlt />
+        </a>
+
+        <a
+          href="https://www.cuet.ac.bd/"
+          target="_blank"
+          rel="noreferrer"
+          title="CUET"
+          aria-label="CUET"
+        >
+          <FaUniversity />
+        </a>
+      </div>
+
+      <p className="footer-copy">
+        © {new Date().getFullYear()} Md. Mamunur Rahman
+      </p>
+    </footer>
+  );
+}

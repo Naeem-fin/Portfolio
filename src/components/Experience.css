@@ -1,0 +1,151 @@
+.experience-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+/* Heading */
+.experience-heading {
+  background-color: #1e293b;
+  padding: 50px 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.experience-heading h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Boxes */
+.experience-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-box h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+/* Info container with logos */
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each item: logo + text */
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px; /* increased space between logo and info */
+  background-color: #e2e8f0;
+  padding: 15px 25px;
+  border-radius: 12px;
+}
+
+.experience-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.experience-item div {
+  flex: 1;
+}
+
+/* Text Styling */
+.experience-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experience-duration {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.experience-subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+.experience-item p {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+.experience-item ul {
+  margin: 0 0 0 18px;
+  padding: 0;
+}
+
+.experience-item ul li {
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .experience-box {
+    padding: 20px;
+  }
+
+  .experience-box h4 {
+    font-size: 20px;
+  }
+
+  .experience-item {
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  .experience-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .experience-title {
+    font-size: 16px;
+  }
+
+  .experience-duration {
+    font-size: 13px;
+  }
+
+  .experience-subtitle {
+    font-size: 14px;
+  }
+
+  .experience-item p,
+  .experience-item ul li {
+    font-size: 15px;
+  }
+
+  .experience-heading h2 {
+    font-size: 28px;
+  }
+}
