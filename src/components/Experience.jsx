@@ -12,7 +12,7 @@ export default function Experience() {
     <div className="experience-page">
       {/* Heading */}
       <div className="experience-heading">
-        <h2>Experience</h2>
+        <h2>Industrial Experiences</h2>
       </div>
 
       {/* Box 1: Industrial Experience */}
@@ -21,7 +21,9 @@ export default function Experience() {
         <div className="experience-info">
           {/* Zodiac */}
           <div className="experience-item">
-            <img src={zodiacLogo} alt="Zodiac Logo" className="experience-logo" />
+            <a href="https://cphlbd.com/portfolio/zodiac-power-chittagong-ltd/" target="_blank" rel="noopener noreferrer">
+              <img src={zodiacLogo} alt="Zodiac Logo" className="experience-logo" />
+            </a>
             <div>
               <p className="experience-title"><strong>Zodiac Power Chittagong Ltd. – Mechanical Intern</strong></p>
               <p className="experience-duration">Duration: Jan 2023 – Apr 2023</p>
@@ -38,7 +40,9 @@ export default function Experience() {
 
           {/* Abul Khair Steel */}
           <div className="experience-item">
-            <img src={aksLogo} alt="AKS Logo" className="experience-logo" />
+            <a href="https://abulkhairsteel.com/" target="_blank" rel="noopener noreferrer">
+              <img src={aksLogo} alt="AKS Logo" className="experience-logo" />
+            </a>
             <div>
               <p className="experience-title"><strong>Abul Khair Steel (AKS) – Industrial Visit</strong></p>
               <p className="experience-duration">Duration: Feb 2023</p>

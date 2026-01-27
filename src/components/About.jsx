@@ -21,6 +21,11 @@ export default function About() {
         <div className="box-heading">My Personal Skills</div>
         <div className="box-content">
           <ul>
+            <li>Team Leader</li>
+            <li>Public Speaking</li>
+            <li>Decision Making</li>
+            <li>Project Management</li>
+            <li>Traveler and Explorer</li>
             <li>Problem-solving & Analytical Thinking</li>
             <li>Team Collaboration & Communication</li>
             <li>Time Management & Organization</li>
@@ -28,14 +33,16 @@ export default function About() {
         </div>
       </div>
 
-      {/* Software Skills */}
+      {/* Technical / Software Skills */}
       <div className="about-box">
-        <div className="box-heading">My Software Skills</div>
+        <div className="box-heading">Technical & Software Skills</div>
         <div className="box-content">
           <ul>
-            <li>ANSYS, COMSOL, MATLAB, SolidWorks</li>
-            <li>Python, C++, Java</li>
-            <li>MS Office, LaTeX</li>
+            <li><strong>Simulation & CAD:</strong> ANSYS, COMSOL, SolidWorks, AutoCAD, Simulink</li>
+            <li><strong>Programming:</strong> FORTRAN, C, Python, C++, Java</li>
+            <li><strong>Data Analysis:</strong> Origin Pro, Excel</li>
+            <li><strong>Numerical Tools:</strong> MATLAB</li>
+            <li><strong>Others:</strong> LaTeX, Arduino, MS Office</li>
           </ul>
         </div>
       </div>

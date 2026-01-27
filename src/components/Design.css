@@ -7,14 +7,18 @@
 
 /* Heading with background like education page */
 .design-heading {
-   background-color: #1e293b;  /* Fallback color */
+  background-image: url("/src/images/design.jpg"); /* 👈 design bg */
+  background-color: #1e293b;  /* fallback */
   background-size: cover;
   background-position: center;
-  padding: 70px 20px; /* Increased padding for bigger heading */
+  background-repeat: no-repeat;
+
+  padding: 70px 20px;
   border-radius: 10px;
   text-align: center;
-  color: white;
+  color: #303234;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
 }
 
 .design-heading h2 {

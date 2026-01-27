@@ -8,19 +8,44 @@
 
 /* Heading */
 .experience-heading {
-  background-color: #1e293b;
-  padding: 50px 20px;
+  position: relative; /* needed for overlay */
+  overflow: hidden;
+
+  background-image: url("/src/images/Experience.jpg"); /* 👈 background */
+  background-color: #1e293b; /* fallback */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 120px 20px 70px 20px; /* top padding moves heading lower */
   border-radius: 12px;
   text-align: center;
   color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Optional dark overlay for readability */
+.experience-heading::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65); /* semi-transparent dark overlay */
+  border-radius: 12px;
+}
+
+.experience-heading * {
+  position: relative; /* text above overlay */
+  z-index: 1;
+}
+
+/* Heading text */
 .experience-heading h2 {
   margin: 0;
   font-size: 36px;
   font-weight: bold;
+  
 }
+
 
 /* Boxes */
 .experience-box {

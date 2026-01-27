@@ -7,17 +7,22 @@
 
 /* Heading with background color */
 .research-heading {
-  background-color: #1e293b; /* Dark blue-gray */
-  padding: 50px 20px;
+  background-image: url("/src/images/Research.jpg"); /* 👈 research bg */
+  background-color: #1e293b; /* fallback */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 70px 20px;
   border-radius: 10px;
   text-align: center;
-  color: white;
+  color: black;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .research-heading h2 {
   margin: 0;
-  font-size: 36px;
+  font-size: 56px;
   font-weight: bold;
 }
 

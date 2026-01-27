@@ -2,16 +2,15 @@
   padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Increased gap between boxes */
+  gap: 40px; 
 }
 
-/* Heading with background image */
 .education-heading {
-  /* background-image: url("/src/images/education.jpg"); Replace with your bg image */
-  background-color: #1e293b;  /* Fallback color */
+   background-image: url("/src/images/Education.jpg"); 
+  background-color: #1e293b;
   background-size: cover;
   background-position: center;
-  padding: 70px 20px; /* Increased padding for bigger heading */
+  padding: 70px 20px;
   border-radius: 10px;
   text-align: center;
   color: white;
@@ -22,6 +21,10 @@
   margin: 0;
   font-size: 42px; /* Bigger heading */
   font-weight: bold;
+  /* text-align: right;
+  padding-right: 25%;  
+  color: #010101; */
+   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Education items */

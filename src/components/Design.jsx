@@ -5,7 +5,7 @@ export default function Design() {
     <div className="design-page">
       {/* Heading */}
       <div className="design-heading">
-        <h2>Design Gallery</h2>
+        <h2>Solid Works Design</h2>
       </div>
 
       {/* Content Box */}

@@ -9,8 +9,13 @@
 /* Page Title */
 .about-heading {
   width: 100%;
-  max-width: 900px; /* Same as boxes */
-  background-color: #1e293b;
+  max-width: 900px;
+  background-image: url("/src/images/about.avif"); /* 👈 about image */
+  background-color: #1e293b; /* fallback */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   padding: 50px 20px;
   border-radius: 20px;
   text-align: center;

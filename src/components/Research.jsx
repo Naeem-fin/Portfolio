@@ -5,7 +5,7 @@ export default function Research() {
     <div className="research-page">
       {/* Heading with background color */}
       <div className="research-heading">
-        <h2>Research</h2>
+        <h2>Undergrade Research</h2>
       </div>
 
       {/* Box 1: Undergraduate Thesis */}
