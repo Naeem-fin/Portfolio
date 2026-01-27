@@ -13,7 +13,7 @@ export default function Footer() {
         <a
           href="mailto:mdmamunurrahman2001@gmail.com"
           title="Email"
-          aria-label="Email"
+          aria-label="Email" 
         >
           <FaEnvelope />
         </a>
@@ -27,7 +27,7 @@ export default function Footer() {
         </a>
 
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/md-mamunur-rahman-b681b1323/"
           target="_blank"
           rel="noreferrer"
           title="LinkedIn"
