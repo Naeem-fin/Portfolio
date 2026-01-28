@@ -24,7 +24,7 @@ export default function Publications() {
                 rel="noopener noreferrer"
                 className="publication-link"
               >
-                Energy Conversion and Management (Q1)
+                Energy Conversion and Management
               </a> Status: Under Review
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function Publications() {
                 rel="noopener noreferrer"
                 className="publication-link"
               >
-                The Chemical Record (Q1)
+                The Chemical Record
               </a> Status: Under Review
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Publications() {
                 rel="noopener noreferrer"
                 className="publication-link"
               >
-                The Chemical Record (Q1)
+                The Chemical Record
               </a> Status: Under Review
           </div>
         </div>
