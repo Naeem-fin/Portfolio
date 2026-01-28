@@ -1,3 +1,4 @@
+/* Publications Page Container */
 .publications-page {
   display: flex;
   flex-direction: column;
@@ -5,12 +6,13 @@
   padding: 40px;
 }
 
-/* Heading */
+/* Heading with background image */
 .publications-heading {
-  background-image: url("/src/images/publication.jpg"); /* optional bg */
-  background-color: #1e293b;
+  background-image: url("/src/images/publication.jpg"); /* optional background */
+  background-color: #1e293b; /* fallback */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 70px 20px;
   border-radius: 10px;
   text-align: center;
@@ -25,7 +27,7 @@
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
-/* Box */
+/* Publications Box */
 .publications-box {
   background-color: rgba(245,245,245,0.95);
   padding: 30px;
@@ -48,11 +50,15 @@
   font-weight: bold;
 }
 
+/* Individual Paper Box */
 .paper-box {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .paper-box strong {
@@ -61,6 +67,7 @@
   font-size: 16px;
 }
 
+/* Authors Style */
 .paper-box .authors {
   font-style: italic;
   margin-bottom: 6px;
@@ -68,19 +75,52 @@
   color: #333;
 }
 
+/* Make your name bold extra and slightly bigger */
+.authors b, .authors strong {
+  font-weight: 900;       /* Extra bold */
+  color: black;        /* Blue color to stand out */
+  font-size: 1.05em;      /* Slightly bigger than normal text */
+}
+
+/* Details / Journal / Conference info */
 .paper-box .details {
   font-size: 14px;
   color: #0f172a;
-}
-
-/* Make status go to a new line */
-.paper-box .details::before {
-  content: "";
-  display: block; /* pushes content below previous line */
-}
-
-/* Optional: Highlight Status text */
-.paper-box .details {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* ensure status is on a new line */
+}
+
+/* Publication link style */
+.publication-link {
+  color: #2563eb;          /* Blue color */
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.publication-link:hover {
+  color: #1d4ed8;         /* Darker blue on hover */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 800px) {
+  .publications-page {
+    padding: 20px;
+  }
+
+  .publications-heading h2 {
+    font-size: 28px;
+  }
+
+  .publications-box {
+    padding: 20px;
+  }
+
+  .paper-box {
+    padding: 15px;
+  }
+
+  .paper-box .authors, 
+  .paper-box .details {
+    font-size: 13px;
+  }
 }

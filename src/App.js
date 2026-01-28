@@ -9,7 +9,7 @@ import Publications from "./components/Publications";
 import Experience from "./components/Experience";
 import Design from "./components/Design";
 import Footer from "./components/Footer";
-
+import Skills from "./components/skills";
 import "./App.css";
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
               <Route path="/publications" element={<Publications />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/design" element={<Design />} />
+              <Route path="/skills" element={<Skills />} />
             </Routes>
           </div>
 

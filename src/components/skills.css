@@ -1,0 +1,70 @@
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Heading with background image */
+.skills-heading {
+  background-image: url("/src/images/skillsbg.webp"); /* replace with your image */
+  background-color: #1e293b; /* fallback color */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 70px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: black; /* make sure text is visible on image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.skills-intro {
+  /* font-style: italic; */
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-size: 16px;
+}
+.skills-heading h2 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+/* Skills box */
+.skills-box {
+  background-color: rgba(245, 245, 245, 0.95); /* Light gray */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.7;
+  color: #0f172a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skills-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.skills-box ul li {
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .skills-box {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .skills-heading h2 {
+    font-size: 28px;
+  }
+}

@@ -20,11 +20,12 @@ export default function Sidebar() {
         <h2>Md. Mamunur Rahman</h2>
         <nav>
           <NavLink to="/" end onClick={() => setIsOpen(false)}>Home</NavLink>
-          <NavLink to="/education" onClick={() => setIsOpen(false)}>Educational Background</NavLink>
+          <NavLink to="/education" onClick={() => setIsOpen(false)}>Academic Background</NavLink>
           <NavLink to="/research" onClick={() => setIsOpen(false)}>Undergraduate Research</NavLink>
-          <NavLink to="/design" onClick={() => setIsOpen(false)}>Solid Works Designs</NavLink>
-          <NavLink to="/publications" onClick={() => setIsOpen(false)}>Publications & Conferences</NavLink>
-          <NavLink to="/experience" onClick={() => setIsOpen(false)}>Industrial Experiences</NavLink>
+          <NavLink to="/publications" onClick={() => setIsOpen(false)}>Publication</NavLink>
+          <NavLink to="/skills" onClick={() => setIsOpen(false)}>Technical & Software Skills</NavLink>
+          <NavLink to="/design" onClick={() => setIsOpen(false)}>CAD Portfolio</NavLink>
+          <NavLink to="/experience" onClick={() => setIsOpen(false)}>Experience</NavLink>
           <NavLink to="/about" onClick={() => setIsOpen(false)}>About Me</NavLink>
         </nav>
       </div>

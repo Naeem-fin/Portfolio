@@ -15,7 +15,7 @@ export default function Design() {
     <div className="design-page">
       {/* Heading */}
       <div className="design-heading">
-        <h2>SolidWorks Design</h2>
+        <h2>CAD Portfolio</h2>
       </div>
 
       {/* Description */}

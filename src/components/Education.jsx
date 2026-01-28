@@ -7,7 +7,7 @@ export default function Education() {
     <div className="education-page">
       {/* Heading with background */}
       <div className="education-heading">
-        <h2>Education</h2>
+        <h2>Academic Background</h2>
       </div>
 
       {/* Education Items */}
@@ -19,6 +19,7 @@ export default function Education() {
           <h4>B.Sc. in Mechanical Engineering</h4>
           <p>CUET, Bangladesh (2019 – 2024)</p>
           <p>CGPA: 3.61 out of 4.00</p>
+          <p>Final year CGPA: 3.83</p>
         </div>
       </div>
 

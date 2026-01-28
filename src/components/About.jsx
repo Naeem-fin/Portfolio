@@ -55,20 +55,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* Technical / Software Skills */}
-      <div className="about-box">
-        <div className="box-heading">Technical & Software Skills</div>
-        <div className="box-content">
-          <ul>
-            <li><strong>Simulation & CAD:</strong> ANSYS, COMSOL, SolidWorks, AutoCAD, Simulink</li>
-            <li><strong>Programming:</strong> FORTRAN, C, Python, C++, Java</li>
-            <li><strong>Data Analysis:</strong> Origin Pro, Excel</li>
-            <li><strong>Numerical Tools:</strong> MATLAB</li>
-            <li><strong>Others:</strong> LaTeX, Arduino, MS Office</li>
-          </ul>
-        </div>
-      </div>
-
       {/* Favorite Books */}
       <div className="about-box">
         <div className="box-heading">My Favourite Books</div>
