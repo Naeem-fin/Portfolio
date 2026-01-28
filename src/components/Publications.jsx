@@ -18,7 +18,7 @@ export default function Publications() {
            <b>Md. Mamunur Rahman</b> , Md. Fardim Hasan Emon, Anup Karmakar, Md. Mahbubul Alam.
           </div>
           <div className="details">
-            — <a 
+             <a 
                 href="https://www.sciencedirect.com/journal/energy-conversion-and-management" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -35,7 +35,7 @@ export default function Publications() {
             <b>Md. Mamunur Rahman</b>, Md. Shaib Hossain, Md. Abdullah AR Rifat, Asfat Kabir Sifat, M. Nasiruzzaman Shaikh.
           </div>
           <div className="details">
-            — <a 
+            <a 
                 href="https://onlinelibrary.wiley.com/journal/15280691" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export default function Publications() {
             M.A. Shadab Siddiqui, <b>Md. Mamunur Rahman</b> , Md. Shaib Hossain, Syed Asim Ali, Shoaib Mahmud, Jahril Fauzan Nur, Fahad Alam, Mohd Yousuf Khan, Abuzar Khan, M. Nasiruzzaman Shaikh.
           </div>
           <div className="details">
-            — <a 
+            <a 
                 href="https://onlinelibrary.wiley.com/journal/15280691" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -69,7 +69,7 @@ export default function Publications() {
             M.A. Shadab Siddiqui, Radif Uddin Ahmed, Sabbir Alom Shuvo, Md. Shaib Hossain, Shoaib Mahmud,<b>Md. Mamunur Rahman</b> , Wahid Billah, Mst. Nusrat Yasmin, Fahad Alam, M. Nasiruzzaman Shaikh.
           </div>
           <div className="details">
-            — <a 
+             <a 
                 href="https://www.sciencedirect.com/journal/international-journal-of-hydrogen-energy" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export default function Publications() {
             Golam Saklayen, Bodius Salam, Md. Fardim Hasan Emon,<b>Md. Mamunur Rahman.</b> 
           </div>
           <div className="details">
-            — <a 
+          <a 
                 href="https://icmerecuet.org/" 
                 target="_blank" 
                 rel="noopener noreferrer"
