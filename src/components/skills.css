@@ -7,7 +7,7 @@
 
 /* Heading with background image */
 .skills-heading {
-  background-image: url("/src/images/skill.jpeg"); /* replace with your image */
+  background-image: url(/src/images/skill.jpeg); /* replace with your image */
   background-color: #1e293b; /* fallback color */
   background-size: cover;
   background-position: center ;

@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 900px;
   /* background-image: url("/src/images/about.avif"); */
-  background-image: url("/src/images/aboutbg.jpeg");
+  background-image: url(/src/images/aboutbg.jpeg);
   background-color: #1e293b; /* fallback */
   background-size: cover;
   /* background-size: 100% auto; */

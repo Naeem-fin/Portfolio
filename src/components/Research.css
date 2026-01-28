@@ -8,7 +8,7 @@
 /* Heading with background color */
 .research-heading {
   /* background-image: url("/src/images/Research.jpg");  */
-  background-image: url("/src/images/resubg.jpeg");
+  background-image: url(/src/images/resubg.jpeg);
   background-color: #1e293b; /* fallback */
   background-size: cover;
   background-position: center bottom;

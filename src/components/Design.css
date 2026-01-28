@@ -10,7 +10,7 @@
 .design-heading {
   width: 100%;
   max-width: 1200px; /* same width as grid */
-  background-image: url("/src/images/design.jpg");
+  background-image: url(/src/images/design.jpg);
   background-color: #1e293b;
   background-size: cover;
   background-position: center;

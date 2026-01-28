@@ -12,7 +12,7 @@
 /* Background Banner */
 .home-banner {
   height: 300px; /* Adjust as needed */
-  background-image: url('/src/images/banner.avif'); /* Banner image */
+  background-image: url(/src/images/banner.avif); /* Banner image */
   background-size: cover;                       /* Cover full area */
   background-position: center ;             /* Shift image slightly lower */
   background-repeat: no-repeat;

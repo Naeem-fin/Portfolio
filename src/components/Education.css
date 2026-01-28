@@ -7,7 +7,7 @@
 
 .education-heading {
   /* background-image: url("/src/images/Education.jpg");  */
-  background-image: url("/src/images/edubg.jpeg");
+  background-image: url(/src/images/edubg.jpeg);
   background-color: #1e293b;
   background-size: cover;
   background-position: center;
