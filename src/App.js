@@ -16,10 +16,8 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        {/* FIXED SIDEBAR */}
         <Sidebar />
 
-        {/* MAIN CONTENT */}
         <div className="main-area">
           <div className="content">
             <Routes>
@@ -33,7 +31,6 @@ function App() {
             </Routes>
           </div>
 
-          {/* FULL WIDTH FOOTER */}
           <Footer />
         </div>
       </div>

@@ -1,19 +1,36 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import "./Sidebar.css";
 
 export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="sidebar">
-      <h2>Md. Mamunur Rahman</h2>
-      <nav>
-        <NavLink to="/" end>Home</NavLink>
-        <NavLink to="/education">Educational Background</NavLink>
-        <NavLink to="/research">Undergraduate Research</NavLink>
-        <NavLink to="/design">Solid Works Designs </NavLink>
-        <NavLink to="/publications">Publications & Conferences </NavLink>
-        <NavLink to="/experience">Industrial Experiences</NavLink>
-        <NavLink to="/about">About Me </NavLink>
-        
-      </nav>
-    </div>
+    <>
+      {/* Hamburger for mobile */}
+      <div className="hamburger" onClick={toggleSidebar}>
+        ☰
+      </div>
+
+      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+        <h2>Md. Mamunur Rahman</h2>
+        <nav>
+          <NavLink to="/" end onClick={() => setIsOpen(false)}>Home</NavLink>
+          <NavLink to="/education" onClick={() => setIsOpen(false)}>Educational Background</NavLink>
+          <NavLink to="/research" onClick={() => setIsOpen(false)}>Undergraduate Research</NavLink>
+          <NavLink to="/design" onClick={() => setIsOpen(false)}>Solid Works Designs</NavLink>
+          <NavLink to="/publications" onClick={() => setIsOpen(false)}>Publications & Conferences</NavLink>
+          <NavLink to="/experience" onClick={() => setIsOpen(false)}>Industrial Experiences</NavLink>
+          <NavLink to="/about" onClick={() => setIsOpen(false)}>About Me</NavLink>
+        </nav>
+      </div>
+
+      {/* Overlay for mobile */}
+      {isOpen && <div className="overlay" onClick={toggleSidebar}></div>}
+    </>
   );
 }
