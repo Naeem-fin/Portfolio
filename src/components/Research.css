@@ -7,7 +7,7 @@
 
 /* Heading with background color */
 .research-heading {
-  background-image: url("/src/images/Research.jpg"); /* 👈 research bg */
+  background-image: url("/src/images/Research.jpg"); /* research bg */
   background-color: #1e293b; /* fallback */
   background-size: cover;
   background-position: center;
@@ -35,6 +35,12 @@
   font-size: 16px;
   line-height: 1.7;
   color: #0f172a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth hover effect */
+}
+
+.research-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .research-box h4 {

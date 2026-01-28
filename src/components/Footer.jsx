@@ -4,7 +4,10 @@ import {
   FaLinkedin,
   FaMapMarkerAlt,
   FaUniversity,
+  FaResearchgate,
+  FaFacebook,
 } from "react-icons/fa";
+import { SiOrcid } from "react-icons/si"; // ORCID icon
 
 export default function Footer() {
   return (
@@ -36,6 +39,48 @@ export default function Footer() {
           <FaLinkedin />
         </a>
 
+        
+
+        <a
+          href="https://www.researchgate.net/profile/Md-Rahman-1974"
+          target="_blank"
+          rel="noreferrer"
+          title="ResearchGate"
+          aria-label="ResearchGate"
+        >
+          <FaResearchgate />
+        </a>
+
+        <a
+          href="https://orcid.org/0009-0003-2965-4665"
+          target="_blank"
+          rel="noreferrer"
+          title="ORCID"
+          aria-label="ORCID"
+        >
+          <SiOrcid />
+        </a>
+
+        <a
+          href="https://www.facebook.com/mamunur.rahman.9041"
+          target="_blank"
+          rel="noreferrer"
+          title="Facebook"
+          aria-label="Facebook"
+        >
+          <FaFacebook />
+        </a>
+
+        
+        <a
+          href="https://www.cuet.ac.bd/"
+          target="_blank"
+          rel="noreferrer"
+          title="CUET"
+          aria-label="CUET"
+        >
+          <FaUniversity />
+        </a>
         <a
           href="https://www.google.com/maps/place/Narsingdi,+Bangladesh"
           target="_blank"
@@ -46,15 +91,6 @@ export default function Footer() {
           <FaMapMarkerAlt />
         </a>
 
-        <a
-          href="https://www.cuet.ac.bd/"
-          target="_blank"
-          rel="noreferrer"
-          title="CUET"
-          aria-label="CUET"
-        >
-          <FaUniversity />
-        </a>
       </div>
 
       <p className="footer-copy">

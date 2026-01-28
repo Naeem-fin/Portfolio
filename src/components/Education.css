@@ -6,7 +6,7 @@
 }
 
 .education-heading {
-   background-image: url("/src/images/Education.jpg"); 
+  background-image: url("/src/images/Education.jpg"); 
   background-color: #1e293b;
   background-size: cover;
   background-position: center;
@@ -19,41 +19,51 @@
 
 .education-heading h2 {
   margin: 0;
-  font-size: 42px; /* Bigger heading */
+  font-size: 42px; 
   font-weight: bold;
-  /* text-align: right;
-  padding-right: 25%;  
-  color: #010101; */
-   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Education items */
 .education-item {
   display: flex;
-  align-items: flex-start;
-  gap: 30px; /* More space between logo and text */
-  background-color: rgba(245, 245, 245, 0.95); /* Slightly more opaque */
-  padding: 40px; /* Bigger box */
-  border-radius: 15px; /* Slightly bigger rounded corners */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
-  min-height: 180px; /* Ensure taller box */
+  align-items: center; /* vertically center text and logo */
+  gap: 30px;
+  background-color: rgba(245, 245, 245, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  min-height: 180px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.edu-logo {
-  width: 100px;  /* Bigger logo */
-  height: 100px;
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo sizes */
+.edu-logo-gcc {
+  width: 160px;  /* Default logo size */
+  height: 160px;
+  object-fit: contain;
+}
+.edu-logo-cuet {
+  width: 160px;
+  height: 160px;
   object-fit: contain;
 }
 
+
 .edu-info h4 {
   margin: 0 0 8px 0;
-  font-size: 22px; /* Bigger title */
+  font-size: 22px;
   font-weight: bold;
 }
 
 .edu-info p {
   margin: 4px 0;
-  font-size: 17px; /* Bigger text */
+  font-size: 17px;
   color: #0f172a;
   line-height: 1.6;
 }
@@ -68,10 +78,16 @@
     min-height: auto;
   }
 
-  .edu-logo {
-    width: 80px;
-    height: 80px;
+  .edu-logo-gcc {
+    width: 120px;
+    height: 120px;
     margin-bottom: 15px;
+  }
+
+  /* CUET responsive logo */
+  .education-item:first-child .edu-logo-cuet {
+    width: 150px;
+    height: 150px;
   }
 
   .edu-info h4 {

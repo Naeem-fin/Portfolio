@@ -1,11 +1,31 @@
 import "./Experience.css";
+import ImageSlider from "./ImageSlider";
 
-// Logos for each section
+// Logos
 import zodiacLogo from "../images/Zodiac.png";
 import aksLogo from "../images/AKS.png";
 import instructorLogo from "../images/instructor.png";
 import archiveLogo from "../images/archive.jpg";
 import financeLogo from "../images/Finance.jpg";
+
+// Zodiac photos
+import zodiac1 from "../images/groupzodiac.jpg";
+import zodiac2 from "../images/groupzodiac2.jpg";
+import zodiac3 from "../images/groupzodiac3.avif";
+
+// AKS photos
+import aks1 from "../images/aks1.jpeg";
+import aks2 from "../images/aks2.jpeg";
+import aks3 from "../images/aks3.jpeg";
+
+// RMA photos
+import rma1 from "../images/rma1.jpeg";
+import rma2 from "../images/rma2.PNG";
+import rma3 from "../images/rma3.jpeg";
+
+// NSF photos
+import nsf1 from "../images/nsf1.JPEG";
+import nsf2 from "../images/nsf2.PNG";
 
 export default function Experience() {
   return (
@@ -15,96 +35,120 @@ export default function Experience() {
         <h2>Industrial Experiences</h2>
       </div>
 
-      {/* Box 1: Industrial Experience */}
+      {/* Industrial Experience */}
       <div className="experience-box">
         <h4>Industrial Experience</h4>
+
         <div className="experience-info">
           {/* Zodiac */}
           <div className="experience-item">
-            <a href="https://cphlbd.com/portfolio/zodiac-power-chittagong-ltd/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://cphlbd.com/portfolio/zodiac-power-chittagong-ltd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={zodiacLogo} alt="Zodiac Logo" className="experience-logo" />
             </a>
-            <div>
-              <p className="experience-title"><strong>Zodiac Power Chittagong Ltd. – Mechanical Intern</strong></p>
-              <p className="experience-duration">Duration: Jan 2023 – Apr 2023</p>
-              <p>
-                During my internship at Zodiac Power Chittagong Ltd., I gained hands-on exposure to:
+
+            <div className="experience-text">
+              <p className="experience-title">
+                <strong>Zodiac Power Chittagong Ltd. – Mechanical Intern</strong>
               </p>
+              <p className="experience-duration">Duration: Jan 2023 – Apr 2023</p>
               <ul>
                 <li>HFO-based power generation systems</li>
-                <li>Operation and maintenance of boilers and furnaces</li>
+                <li>Operation and maintenance of boilers</li>
                 <li>Cooling towers and auxiliary systems</li>
               </ul>
             </div>
+
+            <ImageSlider images={[zodiac1, zodiac2, zodiac3]} />
           </div>
 
-          {/* Abul Khair Steel */}
+          {/* AKS */}
           <div className="experience-item">
-            <a href="https://abulkhairsteel.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://abulkhairsteel.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={aksLogo} alt="AKS Logo" className="experience-logo" />
             </a>
-            <div>
-              <p className="experience-title"><strong>Abul Khair Steel (AKS) – Industrial Visit</strong></p>
-              <p className="experience-duration">Duration: Feb 2023</p>
-              <p>
-                During the industrial visit at Abul Khair Steel (AKS), I observed:
+
+            <div className="experience-text">
+              <p className="experience-title">
+                <strong>Abul Khair Steel (AKS) – Industrial Visit</strong>
               </p>
+              <p className="experience-duration">Duration: Feb 2023</p>
               <ul>
                 <li>Rolling and casting processes</li>
-                <li>Metallurgical quality control methods</li>
+                <li>Metallurgical quality control</li>
               </ul>
             </div>
+
+            <ImageSlider images={[aks1, aks2, aks3]} />
           </div>
         </div>
       </div>
 
-      {/* Box 2: Teaching & Leadership */}
+      {/* Teaching & Leadership */}
       <div className="experience-box">
-        <h4>Teaching & Leadership</h4>
+        <h4>Extra-Curricular Activities</h4>
+
         <div className="experience-info">
           {/* Instructor */}
           <div className="experience-item">
             <img src={instructorLogo} alt="Instructor Logo" className="experience-logo" />
-            <div>
-              <p className="experience-title"><strong>Math Instructor, Guideline Academic Care, Dhaka</strong></p>
-              <p className="experience-duration">Duration: Jan 2022 – Dec 2022</p>
-              <p className="experience-subtitle">Responsibilities:</p>
+
+            <div className="experience-text">
+              <p className="experience-title">
+                <strong>Math Instructor, Guideline Academic Care</strong>
+              </p>
+              <p className="experience-duration">Duration: Sep 2024– Dec 2024</p>
               <ul>
-                <li>Prepared and delivered lessons for students</li>
-                <li>Monitored student progress and performance</li>
-                <li>Provided additional support to struggling students</li>
+                <li>Prepared and delivered lessons</li>
+                <li>Monitored student progress</li>
+                <li>Provided extra academic support</li>
               </ul>
             </div>
           </div>
 
-          {/* Archive Secretary */}
+          {/* RMA */}
           <div className="experience-item">
-            <img src={archiveLogo} alt="Archive Logo" className="experience-logo" />
-            <div>
-              <p className="experience-title"><strong>Archive Secretary, Robo Mechatronics Association (RMA)</strong></p>
-              <p className="experience-duration">Duration: Mar 2022 – Dec 2022</p>
-              <p className="experience-subtitle">Responsibilities:</p>
+            <img src={archiveLogo} alt="RMA Logo" className="experience-logo" />
+
+            <div className="experience-text">
+              <p className="experience-title">
+                <strong>Archive Secretary, Robo Mechatronics Association (RMA), CUET</strong>
+              </p>
+              <p className="experience-duration">Duration: Aug 2023– Aug 2024</p>
               <ul>
-                <li>Organized meetings and maintained records</li>
-                <li>Assisted in planning workshops and events</li>
-                <li>Managed archives and documentation for the association</li>
+                <li>Organized meetings and records</li>
+                <li>Assisted in workshops and events</li>
+                <li>Managed documentation</li>
               </ul>
             </div>
+
+            <ImageSlider images={[rma1, rma2, rma3]} />
           </div>
 
-          {/* Finance Secretary */}
+          {/* NSF */}
           <div className="experience-item">
             <img src={financeLogo} alt="Finance Logo" className="experience-logo" />
-            <div>
-              <p className="experience-title"><strong>Finance Secretary, Narsingdi Students’ Forum (NSF), CUET</strong></p>
-              <p className="experience-duration">Duration: Jan 2022 – Dec 2022</p>
-              <p className="experience-subtitle">Responsibilities:</p>
+
+            <div className="experience-text">
+              <p className="experience-title">
+                <strong>Finance Secretary, NSF, CUET</strong>
+              </p>
+              <p className="experience-duration">Duration: May 2023– Aug 2024</p>
               <ul>
-                <li>Managed budgets and financial reports</li>
-                <li>Monitored fund allocations for events</li>
-                <li>Coordinated with vendors and sponsors</li>
+                <li>Managed budgets and reports</li>
+                <li>Monitored fund allocation</li>
+                <li>Coordinated with vendors</li>
               </ul>
             </div>
+
+            <ImageSlider images={[nsf1, nsf2]} />
           </div>
         </div>
       </div>

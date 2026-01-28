@@ -13,23 +13,23 @@ export default function Education() {
       {/* Education Items */}
       <div className="education-item">
         <a href="https://cuet.ac.bd/" target="_blank" rel="noopener noreferrer">
-          <img src={cuetLogo} alt="CUET Logo" className="edu-logo" />
+          <img src={cuetLogo} alt="CUET Logo" className="edu-logo-cuet" />
         </a>
         <div className="edu-info">
           <h4>B.Sc. in Mechanical Engineering</h4>
           <p>CUET, Bangladesh (2019 – 2024)</p>
-          <p>CGPA: 3.61 / 4.00 | Rank: 21 / 177 (Top 11.9%)</p>
+          <p>CGPA: 3.61 out of 4.00</p>
         </div>
       </div>
 
       <div className="education-item">
         <a href="https://www.gccbof.edu.bd/" target="_blank" rel="noopener noreferrer">
-          <img src={gccLogo} alt="GCC Logo" className="edu-logo" />
+          <img src={gccLogo} alt="GCC Logo" className="edu-logo-gcc" />
         </a>
         <div className="edu-info">
           <h4>Higher Secondary Certificate (HSC)</h4>
           <p>Gazipur Cantonment College (2016 – 2018)</p>
-          <p>GPA: 5.00 / 5.00 | Science Group</p>
+          <p>GPA: 5.00 out of 5.00 | Science Group</p>
         </div>
       </div>
     </div>

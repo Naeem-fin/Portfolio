@@ -7,137 +7,80 @@
 
 /* Heading */
 .publications-heading {
-  position: relative;
-  overflow: hidden;
-
-  background-image: url("/src/images/publication.jpg");
+  background-image: url("/src/images/publication.jpg"); /* optional bg */
   background-color: #1e293b;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
-  padding: 120px 20px 70px 20px;
+  padding: 70px 20px;
   border-radius: 10px;
   text-align: center;
   color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.publications-heading::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.65);
-  border-radius: 10px;
-}
-
-.publications-heading * {
-  position: relative;
-  z-index: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .publications-heading h2 {
   margin: 0;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
-/* Publication boxes */
+/* Box */
 .publications-box {
-  background-color: rgba(245, 245, 245, 0.95);
+  background-color: rgba(245,245,245,0.95);
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  line-height: 1.7;
-  color: #0f172a;
-
-  counter-reset: paper-counter; /* numbering starts from 1 inside each box */
-  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Section title */
+.publications-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
 .publications-box h4 {
-  font-size: 20px;
   margin-top: 0;
-  margin-bottom: 30px;
+  font-size: 22px;
   font-weight: bold;
 }
 
-/* Each paper box */
 .paper-box {
-  background-color: white;
-  padding: 20px 20px 20px 50px; /* left padding for number inside box */
+  background-color: #ffffff;
+  padding: 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  counter-increment: paper-counter;
-  position: relative;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* Number inside the box */
-.paper-box::before {
-  content: counter(paper-counter);
-  position: absolute;
-  left: 15px;
-  top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: black; /* Changed to black */
-  background-color: white;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 28px;
-  border: 2px solid #000; /* Black border instead of blue */
-}
-
-/* Paper title */
 .paper-box strong {
   display: block;
-  font-size: 17px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  font-size: 16px;
 }
 
-/* Author names */
 .paper-box .authors {
   font-style: italic;
-  color: #0f172a;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
 }
 
-/* Journal / Conference + Status */
 .paper-box .details {
-  color: #475569; /* subtle gray */
-  font-size: 15px;
+  font-size: 14px;
+  color: #0f172a;
 }
 
-/* Responsive */
-@media (max-width: 800px) {
-  .publications-box {
-    font-size: 15px;
-    padding: 20px;
-  }
+/* Make status go to a new line */
+.paper-box .details::before {
+  content: "";
+  display: block; /* pushes content below previous line */
+}
 
-  .publications-heading h2 {
-    font-size: 28px;
-  }
-
-  .publications-box h4 {
-    font-size: 18px;
-  }
-
-  .paper-box {
-    padding: 15px 15px 15px 45px;
-  }
-
-  .paper-box::before {
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    top: 15px;
-    left: 15px;
-    border: 2px solid #000; /* black border for smaller screens */
-  }
+/* Optional: Highlight Status text */
+.paper-box .details {
+  display: flex;
+  flex-direction: column;
 }
