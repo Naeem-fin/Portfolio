@@ -38,7 +38,7 @@ export default function Design() {
       <div className="design-grid">
         <DesignCard
           img={d1}
-          title="Winged Rotor Assembly"
+          title="Harry Potter Golden Snitch"
           description="• Curved blade modeling and surface features
 • Assembly alignment and symmetry control"
         />
